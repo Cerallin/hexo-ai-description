@@ -1,6 +1,6 @@
 {
   "name": "hexo-ai-description",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate description with ai",
   "main": "index.js",
   "scripts": {
