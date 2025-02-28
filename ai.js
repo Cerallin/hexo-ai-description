@@ -1,7 +1,6 @@
 const { OpenAI } = require("openai");
-const { stripHTML } = require("hexo-util");
 
-module.exports = async function(content, config) {
+module.exports = async function (content, config) {
   const { api_key, api_url, model, max_tokens, prompt } = config;
 
   const client = new OpenAI({
@@ -22,5 +21,7 @@ module.exports = async function(content, config) {
     max_tokens: max_tokens,
   });
 
-  return stripHTML(response.choices[0].message.content);
+  const result = response.choices[0].message.content
+
+  return result.replaceAll(/\<think\>(.|\s)*\<\/think\>\s+/g, '');
 };
