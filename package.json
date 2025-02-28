@@ -1,0 +1,28 @@
+{
+  "name": "hexo-ai-description",
+  "version": "0.9.0",
+  "description": "Generate description with ai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cerallin/hexo-ai-description.git"
+  },
+  "keywords": [
+    "hexo",
+    "hexo-plugin",
+    "openai"
+  ],
+  "author": "Cerallin <cerallin@cerallin.top>",
+  "license": "MIT",
+  "dependencies": {
+    "html-to-text": "^9.0.5",
+    "openai": "^4.8.0"
+  },
+  "homepage": "https://github.com/Cerallin/hexo-ai-description",
+  "publishConfig": {
+    "access": "public"
+  }
+}
